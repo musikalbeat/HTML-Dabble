@@ -9,25 +9,93 @@
 -->
 <!--
     When saving an html file, set the encoding to UTF-8 (which is the preferred encoding 
-    for HTML files). You can use either ".htm" or ".html" as the file extension.
+    for HTML files).
+    - You can use either ".htm" or ".html" as the file extension.
+    
+    Element with no content are empty elements. Does not have an end tag.
+    - Some HTML elements will display correctly, even if you forget the end tag
+      because some closing tags are considered optional.
+        - <p> This is a paragraph
+        - <p> This is a second paragraph
+
+    HTML elements can be neested (elements can contain elements).
+-->
+<!--
+    HTML Attributes
+    - All HTML elements can have attributes
+    - Provide additional information about an element
+    - Are always specified in the start tag
+    - Usually come in name/value pairs like: name="value"
+    - 'style' attribute is used to specify styling of an element:
+        - color
+        - font
+        - size
+        - etc
+
+    Quote Attributes Values are suggested but not required. Best to quote values especially
+    if there are spaces in titles, descriptions, etc.
+    - <a href="https://www.youtube.com">
+    - <a href=https://www.youtube.com>
 -->
 
 <!DOCTYPE html> <!--Defines document to be HTML5. This is not case sensitive.-->
-<html> <!--Root element of an HTML page-->
+<html lang="en-US">
+<!--Root element of an HTML page. Language declared is important for accessibility apps.-->
 
     <head> <!--Contains meta information about the document.-->
 
         <title> Page Title </title> <!--Specifies title for the document.-->
+        <meta charset="UTF-8">
+        <!--
+            Typically define the document title, character set, styles, scripts, and 
+            other meta info.
+        -->
 
     </head>
 
     <body> <!--Contains the visible page content.-->
 
         <h1>My First Heading</h1> <!--Goes from h1 to h6. Most importance to least.-->
-        <p>My first paragraph.</p> <!--Holds a body of text.-->
+        
+        <p style="color:maroon" title="I'm a tooltip">
+        <!--title in paragraph becomes a tooltip when moused over.-->
+
+            My first paragraph.
+            <br> <!--Line break-->
+            My second paragraph.
+            <hr> <!--Horizontal rule-->
+            My third paragraph.
+
+        </p>
+        
         <a href="https://www.youtube.com">Youtube Link</a> <!--Defines a link-->
+        
         <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Cat_poster_1.jpg"
             alt = "Domesticated Cats" width="104" height="142">
+        
+        <button>Click Me</button>
+
+        <ul> <!--Unordered/Bullet List-->
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+        <ol> <!--Ordered/Numbered List-->
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+        <pre> <!--Defines preformatted text.-->
+            This keeps
+
+            The format
+
+            With line breaks
+
+            And spaces
+        </pre>
 
     </body>
 
