@@ -1,0 +1,34 @@
+<!--
+    HTML is thestandard markup language for creating Web pages.
+    - Stands for Hyper Text Markup Language
+    - Describes the structure of a Web Page
+    - Consists of a series of elements
+    - Elements tell the browser how to display the content
+    - Tags labal pieces of content such as "heading", "paragraph", "table", etc.
+    - Browsers do not display the HTML tags, but use them to render the content of the page
+-->
+<!--
+    When saving an html file, set the encoding to UTF-8 (which is the preferred encoding 
+    for HTML files). You can use either ".htm" or ".html" as the file extension.
+-->
+
+<!DOCTYPE html> <!--Defines document to be HTML5. This is not case sensitive.-->
+<html> <!--Root element of an HTML page-->
+
+    <head> <!--Contains meta information about the document.-->
+
+        <title> Page Title </title> <!--Specifies title for the document.-->
+
+    </head>
+
+    <body> <!--Contains the visible page content.-->
+
+        <h1>My First Heading</h1> <!--Goes from h1 to h6. Most importance to least.-->
+        <p>My first paragraph.</p> <!--Holds a body of text.-->
+        <a href="https://www.youtube.com">Youtube Link</a> <!--Defines a link-->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Cat_poster_1.jpg"
+            alt = "Domesticated Cats" width="104" height="142">
+
+    </body>
+
+</html>
