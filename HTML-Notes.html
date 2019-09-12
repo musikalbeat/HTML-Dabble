@@ -1,0 +1,158 @@
+<!--
+    HTML is thestandard markup language for creating Web pages.
+    - Stands for Hyper Text Markup Language
+    - Describes the structure of a Web Page
+    - Consists of a series of elements
+    - Elements tell the browser how to display the content
+    - Tags labal pieces of content such as "heading", "paragraph", "table", etc.
+    - Browsers do not display the HTML tags, but use them to render the content of the page
+-->
+<!--
+    When saving an html file, set the encoding to UTF-8 (which is the preferred encoding 
+    for HTML files).
+    - You can use either ".htm" or ".html" as the file extension.
+    
+    Element with no content are empty elements. Does not have an end tag.
+    - Some HTML elements will display correctly, even if you forget the end tag
+      because some closing tags are considered optional.
+        - <p> This is a paragraph
+        - <p> This is a second paragraph
+
+    HTML elements can be neested (elements can contain elements).
+-->
+<!--
+    HTML Attributes
+    - All HTML elements can have attributes
+    - Provide additional information about an element
+    - Are always specified in the start tag
+    - Usually come in name/value pairs like: name="value"
+    - 'style' attribute is used to specify styling of an element:
+        - color
+        - font
+        - size
+        - etc
+
+    Quote Attributes Values are suggested but not required. Best to quote values especially
+    if there are spaces in titles, descriptions, etc.
+    - <a href="https://www.youtube.com">
+    - <a href=https://www.youtube.com>
+-->
+
+<!DOCTYPE html> <!--Defines document to be HTML5. This is not case sensitive.-->
+<html lang="en-US">
+<!--Root element of an HTML page. Language declared is important for accessibility apps.-->
+
+<head> <!--Contains meta information about the document.-->
+
+<title> Page Title </title> <!--Specifies title for the document.-->
+<meta charset="UTF-8">
+<!--
+    Typically define the document title, character set, styles, scripts, and 
+    other meta info.
+-->
+
+</head>
+
+<body style="background-color:powderblue;">
+<!--Contains the visible page content. background-color property defines the background color of HTMl element.-->
+
+<h1 style="font-family: courier;">My First Heading</h1>
+<!--Goes from h1 to h6. Most importance to least. font-family property defines font to be used.-->
+
+<p style="color:maroon; font-size: 160%; text-align: center" title="I'm a tooltip">
+<!--title in paragraph becomes a tooltip when moused over.
+    You can combine more than 1 styles together.
+-->
+<!--
+    <b> - Bold
+    <strong> - Important
+    <i> - Italic
+    <em> - Emphasized
+    <mark> - Marked
+    <small> - Small
+    <del> - Deleted
+    <ins> - Inserted
+    <sub> - Subscript
+    <sup> - Superscript
+-->
+
+    My first paragraph.
+    <br> <!--Line break-->
+    My second paragraph. <q>This sentence is a short quotation.</q>
+    <hr> <!--Horizontal rule-->
+    My third paragraph.
+    
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature.
+        The world's leading conservation organization,
+        WWF works in 100 countries and is supported by
+        1.2 million members in the United States and
+        close to 5 million globally.
+    </blockquote>
+    <!--
+        Browsers usually indent <blockquote elements.
+    -->
+    
+    The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+    <!--
+        Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+    -->
+
+    <address>
+        Written by John Doe.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+    <!--
+        The <address> element is usually displayed in italic. 
+        Most browsers will add a line break before and after the element.
+    -->
+
+    <cite>The Scream</cite> by Edvard Munch. Painted in 1893.
+    <!--
+        The HTML <cite> element defines the title of a work.
+        Browsers usually display <cite> elements in italic.
+    -->
+
+    <bdo dir="rtl">This text will be written from right to left</bdo>
+    <!--
+        <bdo> element defines bi-directional override. 
+    -->
+</p>
+
+<a href="https://www.youtube.com">Youtube Link</a> <!--Defines a link-->
+
+<br>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Cat_poster_1.jpg"
+    alt = "Domesticated Cats" width="104" height="142">
+
+<button>Click Me</button>
+
+<ul> <!--Unordered/Bullet List-->
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ul>
+
+<ol> <!--Ordered/Numbered List-->
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+
+<pre> <!--Defines preformatted text. If you tab even the tags, the tabs follows.-->
+    This keeps
+
+    The format
+
+    With line breaks
+
+    And spaces
+</pre>
+
+</body>
+
+</html>
