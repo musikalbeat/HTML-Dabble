@@ -50,18 +50,25 @@
     Typically define the document title, character set, styles, scripts, and 
     other meta info.
 -->
+<link rel="stylesheet" href="CSS-Notes.css">
+<!--
+    Links the css used for this html document.
+-->
 
 </head>
 
-<body style="background-color:powderblue;">
-<!--Contains the visible page content. background-color property defines the background color of HTMl element.-->
+<body>
+<!--Contains the visible page content.
+    background-color property defines the background color of HTMl element.
+    border defines the outline around an element
+-->
 
 <h1 style="font-family: courier;">My First Heading</h1>
 <!--Goes from h1 to h6. Most importance to least. font-family property defines font to be used.-->
 
-<p style="color:maroon; font-size: 160%; text-align: center" title="I'm a tooltip">
-<!--title in paragraph becomes a tooltip when moused over.
-    You can combine more than 1 styles together.
+<p id="p01">
+<!--To define a specific style for one special element, add an id attribute to the element.
+    The id of an element should be unique within a page, so the id selector is used to select one unique element!
 -->
 <!--
     <b> - Bold
@@ -77,11 +84,18 @@
 -->
 
     My first paragraph.
+</p>
     <br> <!--Line break-->
+<p class="error">
+<!--
+    To define a style for special types of elements, add a class attribute to the element.
+-->
     My second paragraph. <q>This sentence is a short quotation.</q>
+</p>
     <hr> <!--Horizontal rule-->
+<p>
     My third paragraph.
-    
+
     <blockquote cite="http://www.worldwildlife.org/who/index.html">
         For 50 years, WWF has been protecting the future of nature.
         The world's leading conservation organization,

@@ -1,0 +1,39 @@
+/*
+    CSS stands for Cascading Style Sheets.
+    - Describes how HTML elements are to be displayed on screen, paper, or in other media.
+    - Saves a lot of work.
+    - Can control the layout of multiple web pages all at once.
+    - Can be added to HTML elements in 3 ways"
+        - Inline: using the style attribute in HTML elements
+        - Internal: using a <style> element in the <head> section
+        - External: using an external CSS file
+
+    The most common way to add CSS is to keep the styles in separate CSS files
+*/
+
+body {
+    background-color: beige;
+    border: 2px solid lightsalmon;
+    padding: 30px;
+    /* Defines a space between the text and the border.*/
+    margin: 50px;
+    /* Defines a space outside the border.*/
+}
+
+h1 {
+    color: brown;
+}
+
+p {
+    color:black;
+}
+
+#p01 {
+    color:rgb(255, 99, 71);
+    font-size: 160%;
+    text-align: center;
+}
+
+p.error {
+    color: red;
+}
