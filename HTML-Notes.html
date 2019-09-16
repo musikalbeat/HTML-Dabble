@@ -44,16 +44,16 @@
 
 <head> <!--Contains meta information about the document.-->
 
-<title> Page Title </title> <!--Specifies title for the document.-->
-<meta charset="UTF-8">
-<!--
-    Typically define the document title, character set, styles, scripts, and 
-    other meta info.
--->
-<link rel="stylesheet" href="CSS-Notes.css">
-<!--
-    Links the css used for this html document.
--->
+    <title> Page Title </title> <!--Specifies title for the document.-->
+    <meta charset="UTF-8">
+    <!--
+        Typically define the document title, character set, styles, scripts, and 
+        other meta info.
+    -->
+    <link rel="stylesheet" href="CSS-Notes.css">
+    <!--
+        Links the css used for this html document.
+    -->
 
 </head>
 
@@ -63,109 +63,134 @@
     border defines the outline around an element
 -->
 
-<h1 style="font-family: courier;">My First Heading</h1>
-<!--Goes from h1 to h6. Most importance to least. font-family property defines font to be used.-->
+    <h1 style="font-family: courier;">Runaway 5 Cafe</h1>
+    <!--Goes from h1 to h6. Most importance to least. font-family property defines font to be used.-->
 
-<p id="p01">
-<!--To define a specific style for one special element, add an id attribute to the element.
-    The id of an element should be unique within a page, so the id selector is used to select one unique element!
--->
-<!--
-    <b> - Bold
-    <strong> - Important
-    <i> - Italic
-    <em> - Emphasized
-    <mark> - Marked
-    <small> - Small
-    <del> - Deleted
-    <ins> - Inserted
-    <sub> - Subscript
-    <sup> - Superscript
--->
+    <p id="p01">
+    <!--To define a specific style for one special element, add an id attribute to the element.
+        The id of an element should be unique within a page, so the id selector is used to select one unique element!
+    -->
+    <!--
+        <b> - Bold
+        <strong> - Important
+        <i> - Italic
+        <em> - Emphasized
+        <mark> - Marked
+        <small> - Small
+        <del> - Deleted
+        <ins> - Inserted
+        <sub> - Subscript
+        <sup> - Superscript
+    -->
+    <q>We specialize in creating rich milk tea drinks! Feeling famished?
+    We also serve a selection of munchies to satisfy those cravings.</q>
 
-    My first paragraph.
-</p>
-    <br> <!--Line break-->
-<p class="error">
-<!--
-    To define a style for special types of elements, add a class attribute to the element.
--->
-    My second paragraph. <q>This sentence is a short quotation.</q>
-</p>
+    </p>
     <hr> <!--Horizontal rule-->
-<p>
-    My third paragraph.
-
-    <blockquote cite="http://www.worldwildlife.org/who/index.html">
-        For 50 years, WWF has been protecting the future of nature.
-        The world's leading conservation organization,
-        WWF works in 100 countries and is supported by
-        1.2 million members in the United States and
-        close to 5 million globally.
-    </blockquote>
-    <!--
-        Browsers usually indent <blockquote elements.
-    -->
+    <a href="#entree">Entrees</a> <a href="#drink">Drinks</a> <a href="#dessert">Desserts</a>
+    <hr>
     
-    The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+    <h2 id="entree">Entrees</h2>
+    <p>
     <!--
-        Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+        To define a style for special types of elements, add a class attribute to the element.
+    -->
+        My second paragraph. 
+    </p>
+    
+    <h2 id="drinks">Drinks</h2>
+    <p>
+        My third paragraph.
+
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 50 years, WWF has been protecting the future of nature.
+            The world's leading conservation organization,
+            WWF works in 100 countries and is supported by
+            1.2 million members in the United States and
+            close to 5 million globally.
+        </blockquote>
+        <!--
+            Browsers usually indent <blockquote elements.
+        -->
+        
+        The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+        <!--
+            Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+        -->
+
+        <address>
+            Written by John Doe.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+        <!--
+            The <address> element is usually displayed in italic. 
+            Most browsers will add a line break before and after the element.
+        -->
+
+        <cite>The Scream</cite> by Edvard Munch. Painted in 1893.
+        <!--
+            The HTML <cite> element defines the title of a work.
+            Browsers usually display <cite> elements in italic.
+        -->
+
+        <bdo dir="rtl">This text will be written from right to left</bdo>
+        <!--
+            <bdo> element defines bi-directional override. 
+        -->
+    </p>
+
+    <h2 id="desserts">Desserts</h2>
+    <p>
+
+    </p>
+    <a class="redButton" href="https://www.youtube.com" target="_self">Youtube Link</a>
+    <!--
+        Defines a link.
+
+        The target attribute specifies where to open the linked document.
+        The target attribute can have one of the following values:
+        - _blank: Opens in a new window or tab
+        - _self: Opens in the same window/tab as it was clicked (this is default)
+        - _parent: Opens in the parent frame
+        - _top: Opens in the full body of the window
+        - framename: Opens in a named frame
     -->
 
-    <address>
-        Written by John Doe.<br>
-        Visit us at:<br>
-        Example.com<br>
-        Box 564, Disneyland<br>
-        USA
-    </address>
+    <br>
+    <a href="https://upload.wikimedia.org/wikipedia/commons/0/0b/Cat_poster_1.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Cat_poster_1.jpg"
+            alt = "Domesticated Cats" width="104" height="142">
+    </a>
     <!--
-        The <address> element is usually displayed in italic. 
-        Most browsers will add a line break before and after the element.
+        A linked image above.
     -->
 
-    <cite>The Scream</cite> by Edvard Munch. Painted in 1893.
-    <!--
-        The HTML <cite> element defines the title of a work.
-        Browsers usually display <cite> elements in italic.
-    -->
+    <button>Click Me</button>
 
-    <bdo dir="rtl">This text will be written from right to left</bdo>
-    <!--
-        <bdo> element defines bi-directional override. 
-    -->
-</p>
+    <ul> <!--Unordered/Bullet List-->
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
 
-<a href="https://www.youtube.com">Youtube Link</a> <!--Defines a link-->
+    <ol> <!--Ordered/Numbered List-->
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
 
-<br>
+    <pre> <!--Defines preformatted text. If you tab even the tags, the tabs follows.-->
+        This keeps
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Cat_poster_1.jpg"
-    alt = "Domesticated Cats" width="104" height="142">
+        The format
 
-<button>Click Me</button>
+        With line breaks
 
-<ul> <!--Unordered/Bullet List-->
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
-</ul>
-
-<ol> <!--Ordered/Numbered List-->
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
-</ol>
-
-<pre> <!--Defines preformatted text. If you tab even the tags, the tabs follows.-->
-    This keeps
-
-    The format
-
-    With line breaks
-
-    And spaces
-</pre>
+        And spaces
+    </pre>
 
 </body>
 
