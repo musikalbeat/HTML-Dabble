@@ -38,11 +38,19 @@
     - <a href=https://www.youtube.com>
 -->
 
-<!DOCTYPE html> <!--Defines document to be HTML5. This is not case sensitive.-->
+<!DOCTYPE html>
+<!--
+    Defines document to be HTML5. This is not case sensitive.
+-->
 <html lang="en-US">
-<!--Root element of an HTML page. Language declared is important for accessibility apps.-->
+<!--
+    Root element of an HTML page. Language declared is important for accessibility apps.
+-->
 
-<head> <!--Contains meta information about the document.-->
+<head> 
+<!--
+    Contains meta information about the document.
+-->
 
     <title> Page Title </title> <!--Specifies title for the document.-->
     <meta charset="UTF-8">
@@ -58,16 +66,21 @@
 </head>
 
 <body>
-<!--Contains the visible page content.
+<!--
+    Contains the visible page content.
     background-color property defines the background color of HTMl element.
     border defines the outline around an element
 -->
 
     <h1 style="font-family: courier;">Runaway 5 Cafe</h1>
-    <!--Goes from h1 to h6. Most importance to least. font-family property defines font to be used.-->
-
+    <!--
+        Goes from h1 to h6. Most importance to least. font-family property defines font to be used.
+    -->
+    <h2 style="font-family: courier;">From us to you~</h2>
+    
     <p id="p01">
-    <!--To define a specific style for one special element, add an id attribute to the element.
+    <!--
+        To define a specific style for one special element, add an id attribute to the element.
         The id of an element should be unique within a page, so the id selector is used to select one unique element!
     -->
     <!--
@@ -86,8 +99,13 @@
     We also serve a selection of munchies to satisfy those cravings.</q>
 
     </p>
+    
     <hr> <!--Horizontal rule-->
-    <a href="#entree">Entrees</a> <a href="#drink">Drinks</a> <a href="#dessert">Desserts</a>
+    
+    <div style="text-align: center;">
+        <a href="#entree">Entrees</a> <a href="#drink">Drinks</a> <a href="#dessert">Desserts</a>
+    </div>
+    
     <hr>
     
     <h2 id="entree">Entrees</h2>
@@ -95,7 +113,9 @@
     <!--
         To define a style for special types of elements, add a class attribute to the element.
     -->
-        My second paragraph. 
+        <ul>
+            <li></li>
+        </ul>>
     </p>
     
     <h2 id="drinks">Drinks</h2>
@@ -144,7 +164,7 @@
 
     <h2 id="desserts">Desserts</h2>
     <p>
-
+        Strawberry Shortcake
     </p>
     <a class="redButton" href="https://www.youtube.com" target="_self">Youtube Link</a>
     <!--
