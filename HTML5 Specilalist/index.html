@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h2>Contents</h2>
+    <a href="#HTML 5 Tutorial">HTML 5 Tutorial</a>
+    <a href="#Formatting Text">Formatting Text</a>
+    <a href="#Hyperlinks">Hyperlinks</a>
+    <a href="#Digital Media">Digital Media</a>
+    <a href="#Display Data in Tables and iFrames">Display Data in Tables and iFrames</a>
+    <a href="#Interacting with the User via Forms">Interacting with the User via Forms</a>
+    <a href="#Professional HTML Practices">Professional HTML Practices</a>
+    <a href="#Styling with CSS">Styling with CSS</a>
+    <a href="#Responsive Design">Responsive Design</a>
+
+    <a name="HTML 5 Tutorial"></a>
+    <h2>HTML 5 Tutorial</h2>
+
+    <a name="Formatting Text"></a>
+    <h2>Formatting Text</h2>
+
+    <h3>Lists</h3>
+    <p>There are 2 types of lists: Unordered List and Ordered List</p>
+
+    <h4>Unordered List</h4>
+    <ul type="Disc">
+        <li>Default</li>
+        <li>bullets</li>
+        <li>.</li>
+    </ul>
+    <ul type="Square">
+        <li>Square</li>
+        <li>bullets</li>
+        <li>.</li>
+    </ul>
+    <ul type="Circle">
+        <li>Circle</li>
+        <li>bullets</li>
+        <li>.</li>
+    </ul>
+
+    <h4>Ordered List</h4>
+    <ol type="1">
+        <li>Default</li>
+        <li>enumeration</li>
+        <li>.</li>
+    </ol>
+    <ol type="A">
+        <li>Upper Case</li>
+        <li>enumeration</li>
+        <li>.</li>
+    </ol>
+    <ol type="a">
+        <li>Lower Case</li>
+        <li>enumeration</li>
+        <li>.</li>
+    </ol>
+    <ol type="I">
+        <li>Upper Roman</li>
+        <li>enumeration</li>
+        <li>.</li>
+    </ol>
+    <ol type="i">
+        <li>Lower Roman</li>
+        <li>enumeration</li>
+        <li>.</li>
+    </ol>
+    <ol type="1" start="4">
+        <li>Starting on a specific</li>
+        <li>enumeration</li>
+        <li>.</li>
+    </ol>
+    <h3>Quotations And Citations</h3>
+    <p>This is a regular paragraph where the text begins unindented.</p>
+    <h4>Blockquote</h4>
+    <blockquote>This is a blockquote where the text and all its new-line remain indented.</blockquote>
+    <h4>Cite</h4>
+    <cite>This is a citation, italicized.</cite>
+
+    <h3>Formatting: Bold, Italics, and More</h3>
+    <h4>Bold</h4>
+    <p>To create bold texts use the <strong>strong tags</strong>.</p>
+    <h4>Italics</h4>
+    <p>To create italics texts use the <em> em tags</em>, short for emphasis.</p>
+    <h4>Highlight</h4>
+    <p>To highlight text use the <mark>mark tag</mark>.</p>
+    <h4>Strikethrough</h4>
+    <p>To strikethrough text use the <del>del tag</del>, short for delete.</p>
+    <h4>Underline</h4>
+    <p>To underline text use the <ins>ins tag</ins>, short for insert.</p>
+    <h4>Subscript and Superscript</h4>
+    <p>To have a text be a subscript use the <sub>sub tag</sub>, short for subscript.</p>
+    <p>To have a text be a superscript use the <sup>sup tag</sup>, short for superscript.</p>
+
+    <h3>Computer Code</h3>
+    <p>Here is how you output Hello World to the browser using HTML5 and the code tag.</p>
+    <code>Hello World</code>
+    <p>These tags will output the text inbetween with courier font.</p>
+    <p>In order to have the tags themselves be output instead of as HTML tags, use character entities.</p>
+    <code>&lt;p&gt;We are using the character combination to call the less than and greater than signs to act as our tags.&lt;/p&gt;</code>
+
+    <h3>HTML5 Containers</h3>
+    <p>Containers are elements that hold content such as the heading and paragraph tags. The div and span tags are used to define a section in a document.</p>
+
+    <a name="Hyperlinks"></a>
+    <h2>Hyperlinks</h2>
+    <p>This is section, we will be looking at different types of links. Links are found in nearly all web pages. Links allow users to click their way from page to page. Note that a link does not have to be text. A link can be an image or any other HTML element.</p>
+
+    <h3>Creating an Internal Link</h3>
+    <p>To create an internal link, use the anchor tags &lt;a&gt;&lt;/a&gt;. You then need to include an href attribute which will indicate where the link will be pointed.</p>
+    <p>Sometimes, the html pages are sorted into different folders. To access certain folders, the name of each folder that is traversed through needs to be provided. To go up and out of a current folder, use two dots "..".</p>
+    <p>Here is an example that points us to the <a href="page1.html">Page 1</a> page located in the main folder.</p>
+    <p>Here is an example that points us to the <a href="extra/extra1.html">Extra 1</a> page located in a sub folder.</p>
+
+    <h3>Linking to the Outside World</h3>
+    <p>When you are linking to a world outside your site, you are creating what are called external links.</p>
+    <h4>List of Outside Links</h4>
+    <ul>
+        <li><a href="http://www.youtube.com">Youtube</a></li>
+        <li><a href="http://www.google.com">Google</a></li>
+    </ul>
+
+    <h3>The Target Attribute</h3>
+    <p>Sometimes when we have either an internal or external link, we want to target where the resulting link will appear for the user. Now we have to be careful as this can be targeted by pop-up blockers.</p>
+    <p>Now in order to target where the link will appear is with the &lt;a target=""&gt;&lt;/a&gt; attribute.</p>
+    <ul>
+        <li>_blank : load in a new window/tab</li>
+        <li>_self : load on the same window</li>
+        <li>_top : load everything into the window and replaces _frames</li>
+    </ul>
+
+    <h3>Anchors to Navigate Long Pages</h3>
+    <p>These are called Named Anchors or Bookmarks. This helps us navigate long pages to get to the information we need faster.</p>
+    <p>We will use an empty anchor tag with only the name attribute filled. &lt;a name=""&gt;&lt;/a&gt;</p>
+    <p>These act as anchors so that when we do create, for example, a table of contents. The table of contents will have links using the anchor tag and the href attribute. For href, we would add the prefix # along with the name that you assigned each bookmark anchors.</p>
+
+    <a name="Digital Media"></a>
+    <h2>Digital Media</h2>
+    <p>RIA (Rich Internet Applications) brings about media content such as images, videos, and various datas.</p>
+
+    <h3>Inserting Images</h3>
+    <p>In this topic, we will learn how to insert an image element and also adjust the images.</p>
+    <p>To place an image onto the page, we use the &lt;img src="" alt=""> tag along with the source attribute to reference the path to the image we want to use and the alternate attribute for text-to-speech and Google search. This can be the path to a local image saved in your PC or a web link to an external source.</p>
+    <img src="images/zoomieDog.jpg" alt="Zoomie Dog" /><br />
+
+    <h3>Creating Image Link</h3>
+    <p>In this topic, we will be using the anchor tag and the href attribute to link an image to a destination.</p>
+    <a href="https://www.finalfantasyxiv.com/"><img src="images/ffxivFanfest.png" alt="Shadowbringer" /></a><br />
+
+    <h3>Understanding Image and Image Size</h3>
+    <p>In this topic, we learn how to resize images to fit within a page. By adding the attributes height and width, you can assign a pixel value for a fixed size or a percentage value to scale with the screen.</p>
+    <a href="https://www.finalfantasyxiv.com/"><img src="images/ffxivFanfest.png" width="100%" alt="Shadowbringer" /></a><br />
+
+    <h3>Sizing Images Responsively</h3>
+    <p>We can use the picture element to set image sources that will be displayed depending on the restrictions set. The picture tag is a newer feature to HTML5 and is not fully support in most current browsers, so use with care. As a backup, we can set a regular image element at the end as a fail safe.</p>
+
+    <picture>
+        <source src="images/sunflower.jpg" media="(max-width:400px;)" />
+        <source src="images/lavender.jpg" />
+        <img src="images/lavender.jpg" />
+    </picture>
+
+    <h3>Playing and Controlling Audio</h3>
+    <p>To play an audio file, we need to use the audio tag. Inbetween the opening and closing audio tag, we put the source tag and then the src element. In addition, if we want to be able to control the playback and volume of the audio, we include the controls attribute with the value "controls". You can also include the autoplay attribute too!</p>
+
+    <p>Sometimes a browser would not accept a type of audio file, such as mp3. We can include another source audio file if the one prior does not play.</p>
+
+    <audio controls="controls">
+        <source src="audios/hotMilk.mp3" />
+    </audio>
+
+    <h3>Playing and Controlling Video</h3>
+    <p>Similar to the audio element, the video tag is written in the same way.</p>
+
+    <video controls="controls">
+        <source src="videos/darkSoulsEpilogue.mp4" />
+    </video>
+
+    <!-- SECTION 5 -->
+    <a name="Display Data in Tables and iFrames"></a>
+    <h2>Display Data in Tables and iFrames</h2>
+    <p>In the early days of the web, tables were used to layout pages. This method isn't used anymore as we now use CSS (Cascading Style Sheets) for page layout.</p>
+
+    <h3>Defining a Table</h3>
+    <p>Previously, we know that people do not like to read long passages of texts. A technique we can use to section off the information is by using a table.</p>
+    <p>In order to create table, we use the &lt;table&gt;&lt;/table&gt; tags. Inbetween those tags goes the data for the table. Each row of the table uses the &lt;tr&gt;&lt;/tr&gt; (table row) tags. And then we can define each data using the &lt;td&gt;&lt;/td&gt; (table data) tags.</p>
+
+    <table>
+        <tr>
+            <td>Song</td>
+            <td>Artist</td>
+            <td>Rating</td>
+        </tr>
+        <tr>
+            <td>Faithfully</td>
+            <td>Journey</td>
+            <td>*****</td>
+        </tr>
+        <tr>
+            <td>Keep on Loving You</td>
+            <td>REO Speedwagon</td>
+            <td>****</td>
+        </tr>
+    </table>
+
+    <h3>Defining Border of a Table</h3>
+    <p>For this topic, we will learn how to turn table borders on and off.</p>
+    <p>As the table gets longer and longer, it will become harder to read. To turn on the borders, add the border attribute to the table tag and assign it a numerical value. To give space inbetween the border lines, use the cellspacing attribute. To give the data inside each table cell space between the border and the data, use the cellpadding attribute.</p>
+
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <td>Name</td>
+            <td>Age</td>
+        </tr>
+        <tr>
+            <td>Robert</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>Remy</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Travis</td>
+            <td>20</td>
+        </tr>
+    </table>
+
+    <p>Due note that is method is an older method. The more contemporary method is configuring its attribute in a style sheet.</p>
+
+    <h3>Determining Table and Cell Width</h3>
+    <p>If you are concerned by table appearances on mobile devices, then this topic will show you how to handle it. This topic will show you how to make the table width more responsive.</p>
+
+    <p>Much like how we had images span to the sizes of different window lengths, we will use the same width attribute to have the table be responsive by assigning a percentage value. For a fixed size window, assign a pixel unit value.</p>
+
+    <p>You can also change the width of a table column by using the same width attribute in a table data tag. Using a percentage value will have it be a fraction of the whole table width (not window page).</p>
+
+    <table border="1" width="100%">
+        <tr>
+            <td width="33%">Song</td>
+            <td width="33%">Artist</td>
+            <td width="33%">Rating</td>
+        </tr>
+        <tr>
+            <td>Faithfully</td>
+            <td>Journey</td>
+            <td>*****</td>
+        </tr>
+        <tr>
+            <td>Keep on Loving You</td>
+            <td>REO Speedwagon</td>
+            <td>****</td>
+        </tr>
+    </table>
+
+    <h3>Spanning Multiple Rows and Columns</h3>
+    <p>To section off tables, we can use the table header tag to differentiate labels and data.</p>
+
+    <table border="1" width="100%">
+        <tr>
+            <th width="33%">Song</th>
+            <th width="33%">Artist</th>
+            <th width="33%">Rating</th>
+        </tr>
+        <tr>
+            <td>Faithfully</td>
+            <td>Journey</td>
+            <td>*****</td>
+        </tr>
+        <tr>
+            <td>Keep on Loving You</td>
+            <td>REO Speedwagon</td>
+            <td>****</td>
+        </tr>
+    </table>
+
+    <h3>Inserting iFrame Content</h3>
+    <p>Let's say we have several data that share the same content. We can use an attribute called rowspan that will allow a table data to stretch to multiple rows. Columnspan does the same thing, but for columns.</p>
+
+    <table border="1" width="100%">
+        <tr>
+            <td width="33%">Song</td>
+            <td width="33%">Artist</td>
+            <td width="33%">Rating</td>
+        </tr>
+        <tr>
+            <td>Faithfully</td>
+            <td>Journey</td>
+            <td>*****</td>
+        </tr>
+        <tr>
+            <td>Keep on Loving You</td>
+            <td rowspan="2">REO Speedwagon</td>
+            <td>****</td>
+        </tr>
+        <tr>
+            <td>Time for Me to Fly</td>
+            <td>****</td>
+        </tr>
+    </table>
+
+    <h3>Adding a Table Caption</h3>
+    <p>To insert a YouTube video onto your site, you would use an iframe tag. You can get the preformatted tag by going to the video of your choice and clicking on the Share button. There should be an option to Embed which will provide you with the iframe tag and the video link within.</p>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GDr1Q2cdxto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p>You can also embed a website link, not just a video.</p>
+    
+    
+    <a name="Interacting with User via Forms"></a>
+    <h2>Interacting with the User via Forms</h2>
+    <p></p>
+
+    <h3>Defining the Form</h3>
+    <p></p>
+
+    <h3>Text Input</h3>
+    <p></p>
+
+    <h3>Limiting Text Input</h3>
+    <p></p>
+
+    <h3>Multiple Choice</h3>
+    <p></p>
+
+    <h3>Form Submission</h3>
+    <p></p>
+
+    <h3>Generic Buttons</h3>
+    <p></p>
+
+    <h3>Date Inputs</h3>
+    <p></p>
+
+    <h3>Numerical Input</h3>
+    <p></p>
+
+    <h3>Organzing a Form with Fieldsets</h3>
+    <p></p>
+
+    <a name="Professional HTML5 Practice"></a>
+    <h2>Professional HTML5 Practice</h2>
+    <p></p>
+
+    <h3>Commenting Your Code</h3>
+    <p></p>
+
+    <h3>Meta Tags</h3>
+    <p></p>
+
+    <h3>Inserting External Javascript Code</h3>
+    <p></p>
+
+    <h3>Search Engine Readiness</h3>
+    <p></p>
+
+    <h3>It's a Colorful World</h3>
+    <p></p>
+
+    <h3>Drawing on Canvas</h3>
+    <p></p>
+
+    <a name="Styling with CSS"></a>
+    <h2>Styling with CSS</h2>
+    <p></p>
+
+    <h3>Where to Style...</h3>
+    <p></p>
+
+    <h3>CSS Selectors</h3>
+    <p></p>
+
+    <h3>Fundamental Typography with CSS</h3>
+    <p></p>
+
+    <h3>Understanding the CSS Box Model</h3>
+    <p></p>
+
+    <h3>Floating Your Layout</h3>
+    <p></p>
+
+    <a name="Responsive Design"></a>
+    <h2>Responsive Design</h2>
+    <p></p>
+
+    <h3>Demonstrating Responsive Design</h3>
+    <p></p>
+
+    <h3>Using a Responsive Design</h3>
+    <p></p>
+
+    <h3>Responsive Headers</h3>
+    <p></p>
+
+</body>
+
+</html>
