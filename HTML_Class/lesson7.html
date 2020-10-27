@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lesson 7: Making Animated Button</title>
+    <link href="style7.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Lesson 7: Making Animated Button</h1>
+    <ul>
+        <li>Transformations</li>
+        <li>Basic Animations</li>
+    </ul>
+
+    <h2>What are Transformations?</h2>
+    <p>The transform property applies a transformation to an element. This property allows you to translate, rotate, scale, skew, etc. However we will only be looking at translate and scale, as they are the most easily applicable transformations in CSS.</p>
+    <p>Transformation syntax is as follows:</p>
+    <p>
+        div {<br />
+        transform: transformationType(value); <br />
+        }
+    </p>
+
+    <h2>Translations</h2>
+    <p>The translate property allows us to move an element in any 2D direction.</p>
+    <p>However, to understand translations in CSS, we must understand how the X and Y axis are set up. Unlike a normal four quadrant plane in algebra, CSS flips and Y axis so that moving down is a positive Y value.</p>
+    <img src="https://lh3.googleusercontent.com/GNts_V1pqS_FlVCK-G3T_yHtL-t8vjbRAeoO5x8EIE2DFtjusL3zGFHuaj6KAM28li6FTlkptm1ooUHnW0rS8k-ddl22pNiMjMX6d98R6DGGnNpmjxut3EWv6V9kzrHZKZaONf-5">
+    <p>For example, if we wanted to move a rectangle down and right, we'd use a positive X and Y value in the translation.</p>
+    <img src="https://lh6.googleusercontent.com/9UQCqfG9p2SLuVymSn10R2aluxo3aZCgCk5SlAfeZQXFE7i7yLPB6Eu5AD71wPFXGnA_gJO5Njz4-2BHvuG5j0rGzTh7UiBcRAoo-E7FKLBS5cuyASIRHHMGbR9UrquyIZhLwoLA">
+    <p>We can use translations for the X and Y axis specifically, using translateX and translateY.</p>
+    <p>
+        div {<br />
+        transform: translateX(50px); <br />
+        }<br /><br />
+        div {<br />
+        transform: translateY(20px); <br />
+        }
+    </p>
+    <p>However, we can use translate while providing the Xand Y value to control both at the same time.</p>
+    <p>
+        div {<br />
+        transform: translate(50px, 20px); <br />
+        }
+    </p>
+
+    <h2>Scale</h2>
+    <p>The scale transformation allows us to multiply the size of an element by a specific value. Elements are at a scale value of 1 by default, referring to 100%. Scale an object to 2 would double its size, reffering to 200%.</p>
+    <img src="https://lh4.googleusercontent.com/v4X88X8M6auuIgzI68OndF_wI9UrWsO6XSdqChQJtkO4rhjIWpugEAOy9hie-9eOPs6QqwgW8UxPK-mi6NPldvpj8IIGizwjLR3aQRx-eJFw5aPGXT6u0xLeB5Af94Bye5orpp_u">
+
+    <p>We can use decimals to scale an object down. For example, this would scale a div to 50% of its original size.</p>
+    <p>
+        div {<br />
+        transform: scale(0.5); <br />
+        }
+    </p>
+
+    <h2>Combining Transformations</h2>
+    <p>By default in CSS, writing a property multiple times in a declaration block sets us up to fail. CSS will always apply the last property, rather than the duplicate ones before it.</p>
+    <p>For example, the background color will be set to blue below:</p>
+    <p>
+        div {<br />
+        background-color: red; <br />
+        background-color: green; <br />
+        background-color: blue; <br />
+        }
+    </p>
+    <p>When it comes to transformation, this is no exception. Declaring multiple transformation properties will only apply the last one declared. However, we can combine the multiple different transform values into one line by separating them by spaces.</p>
+
+    <p>Incorrect Code:</p>
+    <p>div {<br />
+
+        transform: translateX(50px);<br />
+
+        transform: translateY(20px);<br />
+
+        transform: scale(0.8);<br />
+
+        }
+
+    <p>Correct Code:</p>
+    <p>div {<br />
+
+        transform: translate(50px, 20px) scale(0.8);<br/>
+
+        }
+    </p>
+    
+    <h2>Basic Animations using Transition</h2>
+    <p>In CSS, the transition property allows us to change other properties smoothly when pseudo-classes are applied.</p>
+    
+    <div class="square purple shiftRight">
+    </div>
+    <br/>
+    <div class="square purple shiftRandom">
+    </div>
+
+</body>
+
+</html>

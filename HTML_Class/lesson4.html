@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lesson 4: Laying Out Element</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Lesson 4: Laying Out Element</h1>
+    <p>The CSS position sets how an element is positioned on a page. There are many options for ways an element can be positioned, however we will only be looking at: static, relative, and absolute positioning.</p>
+
+    <h2>Static Positioning</h2>
+    <p>Static positioning is the default way that elements are positioned on a page. Thay follow the standard box model rules and interact naturally with the flow of the page.</p>
+
+    <div style="position: static;">
+        <p>This is static.</p>
+    </div>
+
+    <h2>Relative Positioning</h2>
+    <p>Relative positioning causes an element to positioned relative to its parent element.</p>
+
+    <p>For example, setting a relative element's height and width to 100% will match its parent element's height and width.</p>
+
+    <p>Elements with relative position, similar to static position, interact naturally with the flow of the page.</p>
+
+    <div class="one">
+        Parent
+        <div class="two">
+            Child <br /> position: relative <br>top:50%; <br />left:50;
+        </div>
+    </div>
+
+    <h2>Absolute Positioning</h2>
+    <p>Absolute positioning causes an element to be positioned in relation to its most recently position ancestor. If there are no positioned ancestors of an element that is absolutely positioned, it gets positioned in relation to the "body" element.</p>
+    <p>A major difference about elements that are absolutely positioned is that they are removed from the normal flow of the page. This means that they can lay on top of other elements flawlessly, and do not follow box model rules with its surrounding elements.</p>
+
+    <div class="three">
+        Parent <br> position: relative;
+        <div class="four">
+            Child <br /> position: absolute; <br /> top: 50% <br />left:50%;
+        </div>
+    </div>
+
+    <h2>Types of Display</h2>
+    <p>There are many types of display in CSS, but we will only focus on three for now. There is inline, block, and inline-block.</p>
+    <p>Inline elements cause height and eidth properties to have no effect. They are allowed to be on the same line os other inline elements (ex: button).</p>
+    <p>Block elements start on a new line and take up a full line. They cannot sit on the same line as inline elements (ex: p).</p>
+    <p>Inline-block elements are formatted as an inline element, but you can also apply height and width values, unlike inline element. No elements are inline-block display by default, but all elements can be set to inline-block.</p>
+</body>
+
+</html>

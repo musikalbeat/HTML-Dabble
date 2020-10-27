@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lesson 6: Making a MC Login Page</title>
+    <link href="style6.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Lesson 6: Making a MC Login Page</h1>
+    <h2>What are Pseudo-classes?</h2>
+    <p>A pseudo-class is used to define a special state of an element. For example, we'll look at the hover, active, and focus pseudo-classes in the lesson which each represent a certain state. For example, hover pseudo-class will be triggered when the user hovers their mouse over an element.</p>
+    <p>If we think about it this way, a pseudo-class is just another class applied to an element when a specific event occurs.</p>
+    <p>The pseudo-class syntax is as follows:</p>
+    <p>selector:pseudo-class { <br/>
+        property:value; <br/>
+        }
+    </p>
+    
+    <h2>Hover</h2>
+    <p>As mentioned, the hover pseudo-class will be triggered when the user hovers their mouse over an element.</p>
+    <p>If we were to have a button that's background color changes from white to light blue when hovered over, we would use the following code:</p>
+    
+    <button class="hover">Hover over me!</button>
+    
+    <h2>Active</h2>
+    <p>The active pseudo-class will be triggered when the user is clicking (or more specifically, has their left mouse button down) on an element.</p>
+    <p>If we wanted a button to turn light pink when we click down on an element, we would use the following code:</p>
+    
+    <button class="click">Click Me!</button>
+    
+    <h2>Combining Hover and Active</h2>
+    
+    <button class="hover click">Hover and Click!</button>
+    
+    <h2>Focus</h2>
+    <p>The focus pseudo-class will be triggered when the user is "focused" on an input element. This means that the inpu element was the last element clicked, and it is waiting for user input.</p>
+    
+    <p>If we were to have a text input that's background color changes from white to light green when we focus on it, we would use the following code: </p>
+    
+    <input type="text" placeholder="Type here!">
+</body>
+
+</html>

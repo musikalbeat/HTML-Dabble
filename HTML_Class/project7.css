@@ -1,0 +1,102 @@
+body {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    background-color: rebeccapurple;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 50px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.button-container {
+    border: 2px solid grey;
+    height: 100%;
+    width: 50vw;
+    margin: 50px auto;
+    background-color: #f3f3f3;
+}
+
+button {
+    display: block;
+    margin: 50px auto;
+    font-family: "Roboto", san-serif;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 150px;
+}
+
+#one {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#one:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-5px)
+}
+
+#one:active {
+    background-color: #e6e4e4;
+    transform: translateY(0);
+}
+
+#two {
+    background-color: #00b0e6;
+    color: white;
+    transition: 0.2s;
+}
+
+#two:hover {
+    background-color: #01a8db;
+    transform: scale(1.05);
+}
+
+#two:active {
+    background-color: #029bca;
+    transform: scale(1);
+}
+
+#three {
+    background-color: #f8b6b6;
+    transition: 1s;
+    text-transform: uppercase;
+    border-radius: 100px;
+}
+
+#three:hover {
+    background-color: #d39b9b;
+    transform: scale(1.5);
+}
+
+#three:active {
+    background-color: #e7acac;
+    transform: scale(0.5);
+}
+
+#four {
+
+    background-color: #585858;
+    color: white;
+    transition: 0.2s;
+    text-transform: uppercase;
+    border-radius: 100px;
+}
+
+#four:hover {
+    background-color: #665cff;
+    transform: translateY(-3px);
+}
+
+#four:active {
+    background-color: #a749ff;
+    transform: translateY(0);
+}

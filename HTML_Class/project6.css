@@ -1,0 +1,49 @@
+body {
+    margin: 0 25%;
+    background-image: url("https://media.mojang.com/blog-image/2c34ca1217c7d95e76a6f8d646adf9208f78145a/blogmcnet.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: "Press Start 2P", cursive;
+    text-align: center;
+    color: white;
+    background-color: #724109;
+    margin-top: 100px;
+    padding: 3%;
+    border-radius: 50px;
+}
+
+input {
+    height: 50px;
+    width: 400px;
+    background-color: #dadada;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    display: block;
+    margin: 20px auto;
+    outline: none;
+}
+
+input:focus {
+    background-color: white;
+}
+
+button {
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #e4e4e4;
+}
+
+button:active {
+    background-color: #cccccc;
+}
