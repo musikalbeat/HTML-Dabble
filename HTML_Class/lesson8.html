@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lesson 8: Building a Pokedex App</title>
+    <link href="style8.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Lesson 8: Building a Pokedex App</h1>
+    <h2>Our First Flexbox</h2>
+    <p>What is Flexbox?</p>
+    <p>Flexbox is a 2D grid used for laying out elements in CSS. We can use flexbox whenever we want to lay elements out vertically or horizontally. It is significantly better for displaying elements in a grid then using margins, because with flexbox, we are able to have our elements laid out for us without having to do much work.</p>
+    <p>How do we create a Flexbox?</p>
+    <p>To create a CSS flexbox, all we need to do is set the display of our parent container to flex. </p>
+    <p>
+        .parent-container { <br>
+        display: flex; <br>
+        }
+    </p>
+
+    <p>Example</p>
+
+    <div class="parent">
+        <div class="child">One</div>
+        <div class="child">Two</div>
+        <div class="child">Three</div>
+    </div>
+
+    <h2>align-items & justify-content</h2>
+    <p>align-items and justify-content change where the content is in a flexbox, whether that's on the x axis or y axis. Align-items spans the y axis, and justify-content spans the x axis.</p>
+
+    <p>We place these properties on the parent.</p>
+    <img src="https://lh4.googleusercontent.com/Ah7kFqxyCrsspoZG_G7AnVbGo8nblhRASI5AX5-EFgSpsoPjqRSqO3_XyGreJgkdgD9cCPEOaHPctkLiLtLTH9sErOM7B0VKxTVeGpEOOlQrJsQTFwNHwqvfINs9dDfjb8UutAOa">
+
+    <div class="parent align-justify">
+        <div class="child">One</div>
+        <div class="child">Two</div>
+        <div class="child">Three</div>
+    </div>
+
+    <p>We can also use flex-start and flex-end as ways to display elements at the start or end of the flexbox. rather than being centered.</p>
+
+    <div class="parent start-end">
+        <div class="child">One</div>
+        <div class="child">Two</div>
+        <div class="child">Three</div>
+    </div>
+
+    <p>If we want to align or justify a single flex element, we could use the align-self or justify-self properties. These should only be applied to the children of a flexbox.</p>
+    <div class="parent">
+        <div class="child c-align-justify1">One</div>
+        <div class="child c-align-justify2">Two</div>
+        <div class="child c-align-justify3">Three</div>
+    </div>
+
+    <h2>flex-direction</h2>
+    <p>We can easily change the direction of our flexbox using the flex-direction property. Be default, all flexboxes have their flex-direction set to row. This means that they will be displayed from left to right (horizontaly). However, we can easily change our flexboxes to be displayed up and down (vertically) when floex-direction is set to column.</p>
+    <p>We place the flex-direction property on the parent.</p>
+    <div class="parent up-down">
+        <div class="child">One</div>
+        <div class="child">Two</div>
+        <div class="child">Three</div>
+    </div>
+
+    <h2>flex-wrap</h2>
+    <p>When a flexbox becomes too tall or too wide to be shown on one screen, the overflowing elements will be shown by default. However, if we wanted to wrap our flexbox when it is too long, we could flex-wrap property to wrap.</p>
+
+    <img src="https://lh3.googleusercontent.com/N7u9biK2-gXRmu043AXDFfzEwZSTNpGu4MWX8A_xXCYj_qIJiFADnhAOrMsafWukUvgtO_-PbH3w4QSy0z6ynnuulJZ-49Cpn1fc7aFjPTydSX9tE39BLj21APH0ZNmWjQvNhzDf">
+    
+    <div class="parent wrap">
+        <div class="child">One</div>
+        <div class="child">Two</div>
+        <div class="child">Three</div>
+        <div class="child">Four</div>
+    </div>
+</body>
+
+</html>

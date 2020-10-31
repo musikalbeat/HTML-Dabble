@@ -1,0 +1,118 @@
+body {
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    background-image: url("https://cdn.wallpapersafari.com/82/42/bG1BTm.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    text-align: center;
+    margin: 100px auto;
+    padding: 2%;
+    border: 10px solid red;
+    background-color: white;
+    border-radius: 12px;
+    width: 40%;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+    margin: 10px auto;
+    width: 75%;
+}
+
+.child {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.child:hover {
+    transform: translateY(-10px);
+}
+
+.child:active {
+    transform: translateY(0);
+}
+
+.grass:hover {
+    background-color: lightgreen;
+}
+
+.fire:hover {
+    background-color: red;
+    color: white;
+}
+
+.water:hover {
+    background-color: aqua;
+}
+
+.electric:hover {
+    background-color: yellow;
+}
+
+.dragon:hover {
+    background-color: indigo;
+    color: white;
+}
+
+.psychic:hover {
+    background-color: violet;
+}
+
+.normal:hover {
+    background-color: #e8e8e8;
+}
+
+.ghost:hover {
+    background-color: rgb(143, 109, 143);
+    color: white;
+}
+
+.bug:hover {
+    background-color: yellowgreen;
+}
+
+.rock:hover {
+    background-color: burlywood;
+}
+
+.ground:hover {
+    background-color: darkgoldenrod;
+    color: white;
+}
+
+.poison:hover {
+    background-color: purple;
+    color: white;
+}
+
+.flying:hover {
+    background-color: skyblue;
+}
+
+.steel:hover {
+    background-color: lightgray;
+}
+
+.fighting:hover {
+    background-color: orange;
+}
+
+.ice:hover {
+    background-color: lightskyblue;
+}
