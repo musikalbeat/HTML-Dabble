@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lesson 9: Building a CSS Telephone</title>
+    <link href="style9.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Lesson 9: Building a CSS Telephone</h1>
+    <h2>Universal Selector</h2>
+    <p>The universal selector, otherwise known as the asterisk (*) symbol, selects all elements in the document.</p>
+    <p>The syntax is as follows:</p>
+
+    <p>
+        * {<br>
+        property: value;<br>
+        }
+    </p>
+
+    <p>The following code would change all text color in a given document to red.</p>
+
+    <p>
+        * {<br>
+        color: red;<br>
+        }
+    </p>
+
+    <h2>Attribute Selector</h2>
+    <p>The attribute selector, selects each element that matches a specific attribute. To recall, an attribute could be something like an href or a type on an HTML element.</p>
+    <p>Using a selector with an additional attribute included in square brackets, we can target all elements that match that selector and attribute.</p>
+
+    <p>
+        selector[attribute] {<br>
+        property: value;<br>
+        }
+    </p>
+
+    <p>For example, if we wanted to select all elements that include an href attribute and add padding, we can use the following code:</p>
+
+    <p>
+        a[href] {<br>
+        padding: 50px;<br>
+        }
+    </p>
+
+    <p>Not only can we simply select elements that match a selector and attribute, but we can select all elements that match a selector and a specific attribute value.</p>
+
+    <p>
+        selector[attribute = "some value"] {<br>
+        property: value;<br>
+        }
+    </p>
+
+    <p>For example, if we wanted to select all elements that include a type attibute that matches the value of "submit" and add margin, we can use the following code:</p>
+
+    <p>
+        button[type = "submit"] {<br>
+        padding: 50px;<br>
+        }
+    </p>
+
+    <h2>Descendent Combinator</h2>
+    <p>The descendent combinator, selects all child elements of a specific selector that descend (e.g. children, grandchildren, great grandchildren, ...) from a selector. The type of element does not need to be direct descendent from the parent )or ancestor) selector (Direct Child Combinator).</p>
+
+    <p>To use selector, all we need to do is use a space between the selector and its descendent's selector.</p>
+
+    <p>
+        selector selector {<br>
+        property: value;<br>
+        }
+    </p>
+
+    <p>If we wanted to select all p tags elements that are a children of a div tag and set their font-size, we use the following code:</p>
+
+    <p>
+        div p {<br>
+        font-size: 12px;<br>
+        }
+    </p>
+
+    <p>However, we can also use classes and ids. If we wanted to select all img tags elements that descend from an id of "main" to set their width, we can use the following code:</p>
+
+    <p>
+        #main img {<br>
+        width: 500px;<br>
+        }
+    </p>
+
+    <h2>Direct Child Combinator</h2>
+    <p>The direct child combinator, selects all child elements of a specific selector that are direct children from a parent selector. The direct child combinator is nearly identical to the descendent combinator, except it does not allow selection of grandchild, great grandchildren, and so on. It only targets direct children.</p>
+
+    <p>To use the direct child combinator, we use a right chevron, or greater-than sign ( > ).</p>
+
+    <p>
+        selector > selector {<br>
+        property: value;<br>
+        }
+    </p>
+
+    <p>
+        parent-selector > child-selector {<br>
+        property: value;<br>
+        }
+    </p>
+
+    <p>
+        #header > .title {<br>
+        color: blue;<br>
+        }
+    </p>
+</body>
+
+</html>
