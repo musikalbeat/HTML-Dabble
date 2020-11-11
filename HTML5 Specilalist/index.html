@@ -312,16 +312,16 @@
 
     <h3>Adding a Table Caption</h3>
     <p>To insert a YouTube video onto your site, you would use an iframe tag. You can get the preformatted tag by going to the video of your choice and clicking on the Share button. There should be an option to Embed which will provide you with the iframe tag and the video link within.</p>
-    
+
     <iframe width="560" height="315" src="https://www.youtube.com/embed/GDr1Q2cdxto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <p>You can also embed a website link, not just a video.</p>
-    
-    
+
+
     <a name="Interacting with User via Forms"></a>
     <h2>Interacting with the User via Forms</h2>
     <p>While most web page developers work on the look of their pages, it is important to use forms to determine whether conversion takes place!</p>
-    
+
     <p>In this section, we will be using forms to encourage users to fill in information in the correct input boxes, buttons, and checkboxes.</p>
 
     <h3>Defining the Form</h3>
@@ -329,20 +329,48 @@
     <p>Every form tag should have 2 attributes: action and </p>
     <p>The action attribute determines what is done to the information. This usually consists of a url to link to scripting languages that in turn will process the inputted information.</p>
     <p>The method attibute has two option: post and get.</p>
-    
+
     <form action="#" method="post">
-        
+
     </form>
 
     <h3>Text Input</h3>
     <p>In this section, we will learn to create a text input box. Users will be able to insert characters in each box.</p>
-    
+
+    <p>The "for" attribute and the "id" attribute links the label and input together. The "name" attibute is what the server will receive and read.</p>
+    <p>Notice how the type attribute for some of the labels below have "text" or "email". Generally for mobile devices, this can affect the type of keyboard that appears when they tap on the input box. So "text" will reveal the typical QWERTY keyboard and "email" will contain a keyboard that makes sure the "@" symbol is available to users right off the bat.</p>
+
     <form action="#" method="post">
         <label for="first">First</label>
+        <input type="text" id="first" name="first" />
+        <label for="last">Last</label>
+        <input type="text" id="last" name="last" />
+        <label for="last">Last</label>
+        <input type="email" id="last" name="last" />
+        <label for="bio">Biography</label>
+        <textarea id="bio" name="last">Type your biography here...</textarea>
     </form>
 
     <h3>Limiting Text Input</h3>
-    <p></p>
+    <p>In this section, we go over how to limit input elements such as setting it as a required element.</p>
+    <p>Using the "required" attribute prevents the user from submiting the information by making sure the text box is filled.</p>
+    
+    <form action="#" method="post">
+        <label for="first">First</label>
+        <input type="text" id="first" name="first" required="required"/>
+        <label for="last">Last</label>
+        <input type="text" id="last" name="last" />
+        <label for="last">Last</label>
+        <input type="email" id="last" name="last" />
+        <label for="bio">Biography</label>
+        <textarea id="bio" name="last">Type your biography here...</textarea>
+        <input id="bands" palceholder="Band Name" list="myBands"/>
+        <datalist id="myBands">
+            <option value="Journey" />
+            <option value="REO Speedwagon" />
+            <option value="Styx" />
+        </datalist>
+    </form>
 
     <h3>Multiple Choice</h3>
     <p></p>

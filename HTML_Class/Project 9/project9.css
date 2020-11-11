@@ -21,6 +21,28 @@ img {
     border-radius: 20px;
 }
 
+.phone button {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 100px;
+    box-shadow: 0 3px 1px;
+    transition: 0.2s;
+}
+
+.phone button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 1px;
+}
+
+.phone button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
 .phone p {
     height: 70px;
     width: 70px;
