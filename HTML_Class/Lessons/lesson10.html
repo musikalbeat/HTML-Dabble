@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lesson 10: Creating Our Own Apple Store</title>
+    <link href="style10.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Lesson 10: Creating Our Own Apple Store</h1>
+    <h2>Table Content</h2>
+    <ul>
+        <li>What is Responsive Design?</li>
+        <li>Media Queries</li>
+        <li>Max-Width & Min-Width</li>
+    </ul>
+
+    <h2>What is Responsive Design?</h2>
+    <p>Responsive design is the principle that all applications should be optimized to fit on every screen size. A responsive web page will automatically adjust for different screen sizes and viewports.</p>
+
+    <img src="https://lh5.googleusercontent.com/4gxI5zK1rWS940mjVn2Wx0YBX4Me1HYRpVrJcjv_ULBn6AQfbn3PGbbD9VQ-sWX5ven_Tr0kkts0xZ1w7vq1_h1D5f0nMvnNeVUyGrS-5sHxclw3o8-nivqTwKjCLTzAPDTnoDNh" />
+
+    <p>Below is a brief look at the Apple's website to see their responsive design in action.</p>
+
+    <img src="https://lh3.googleusercontent.com/O0PbFOLL0OP41mIm7Dzwwu8odmtYnkHqliEgxx__CUi8rVwMkvMYygygxhASVtZOIf4HwWvqLTi5LI92QF-UxdGf-ELvRHreu0rzjCMAx0uXRy1CvOkcOS12u1_JnhM1wlfjoRIC" />
+
+    <h2>Media Queries</h2>
+    <p>We can create our own responsive design in CSS using media queries. Media queries are conditional declarations of styling that only apply based on a given condition about the viewport (think of them almost like "if statements" in other languages).</p>
+
+    <p>We can nest multiple new selectors and declarations within w media query. The following code shows how to do so, using our media query syntax of "@media".</p>
+
+    <p>
+        @media (some condition) { <br />
+
+        selector { <br />
+        property: value; <br />
+        } <br />
+
+        selector { <br />
+        property: value; <br />
+        } <br />
+
+        selector { <br />
+        property: value; <br />
+        } <br />
+        }
+    </p>
+
+    <h2>Min-Width & Max-Width</h2>
+    <p>Two conditionals within the viewport are the min-width and max-width. Not only are these properties able to be set in general to CSS, but they determine how big or small an element is allowed to become. But we can use them determine the screen size within a media query declaration.</p>
+
+    <p>Min-width determines whether a screen is greater than a given size. For example, we could use a media query that uses min-width to check if the screen size is greater than 800px in width.</p>
+
+    <p>
+        @media (min-width: 800px) { <br />
+
+        p { <br />
+        font-size: 12px; <br />
+        } <br />
+
+    </p>
+
+    <p> Max-width determines whether a screen size is smaller than a given size. For example, we could use a media query that uses max-width to check if the screen size is smaller than 800px in width.</p>
+
+    <p>
+        @media (max-width: 800px) { <br />
+
+        p { <br />
+        font-size: 8px; <br />
+        } <br />
+
+    </p>
+</body>
+
+</html>
