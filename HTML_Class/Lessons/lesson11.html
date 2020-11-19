@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lesson 11: Making Animations</title>
+    <link href="style11.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Lesson 11: Making Animations</h1>
+    <h2>Table Content</h2>
+    <ul>
+        <li>What is a Keyframe Animation?</li>
+        <li>"from-to" vs. Percentages</li>
+        <li>The Animation Property</li>
+        <li>animation-delay</li>
+        <li>animation-fill-mode</li>
+    </ul>
+
+    <h2>What is a Keyframe Animation?</h2>
+    <p>As we have already learned in Lesson 7, we can animate from one style to another using pseudo-class (active, hover,...). However, sometimes pseudo-classes are not aways applicable when choosing to animate elements. For example, we may want an element to animate even when it is not hovered over, clicked on, or focused on.</p>
+    
+    <p>Keyframe animations solve this issue by allowing us to gradually change styles over a period of time without the need for pseudo-classes, however pseudo-class animations with transitions are still great options!</p>
+    
+    <p>We can declare keyframe animations with a similar syntax to media queries, using the @ symbol. We need to name our animation, and declare "from" and "to" blocks that represent the style at the beginning of the animation and the end of the animation.</p>
+    
+    <pre>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </pre>
+    
+    <h2>"from-to" vs Percentages</h2>
+    <p>As we have just seen how we can use the "from" and "to" blocks to declare the styless at the beginning and end of the keyframe animation, we notice that we are limited to only two potential styles.</p>
+    
+    <p>We can also use percentages from 0-100 as their own blocks.</p>
+    
+    <pre>
+        @keyframes fadeIn {
+           0% {
+               opacity: 0;
+           }
+           20% {
+               transform: translateY(-5px);
+           }
+           80% {
+               transform: translateY(0);
+           }
+           100% {
+               opacity: 1;
+           }
+        }
+    </pre>
+    
+    <h2>The Animation Property</h2>
+    <p>Now that we know how to declare the CSS keyframe animations, how do we apply them to elements?</p>
+    
+    <p>Using a property called animation, we are able to declare the animation name that we want to apply, the duration of the animation, and an animation fill mode (not alway necessary, see T5). The animation property name must match the keyframe animation name.</p>
+    
+    <pre>
+        .blueBoxIn {
+           height: 150px;
+           width: 150px;
+           background-color: blue;
+           animation: fadeIn 4s;
+        }
+
+        @keyframes fadeIn {
+           from {
+               opacity: 0;
+           }
+           to {
+               opacity: 1;
+           }
+        }
+
+    </pre>
+    
+    <p>This animation will play once on the page load, and can be repeated by refreshing the page.</p>
+    
+    <div class="blueBoxIn"></div>
+    
+    <h2>animation-delay</h2>
+    <p>Since animations play when the page loads by default, it can be very useful to delay an animation for a fixed amount of time before playing it. We can do so by using the animation-delay property.</p>
+    
+    <pre>
+        .blueBoxOut {
+           height: 150px;
+           width: 150px;
+           background-color: blue;
+           animation: fadeIn 4s;
+           animation-delay: 3s;
+        }
+
+        @keyframes fadeOut {
+           from {
+               opacity: 1;
+           }
+           to {
+               opacity: 0;
+           }
+        }
+    </pre>
+    
+    <h2>animation-fill-mode</h2>
+    <p>Let's say we had animation that faded an element out. However, when the animation finishes reducing the element's opacity to 0, it becomes fully visible again. This is not the behavior we would like.</p>
+    
+    <pre>
+        div {
+           height: 150px;
+           width: 150px;
+           background-color: blue;
+           animation: fadeOut 4s;
+        }
+
+        @keyframes fadeOut {
+           from {
+               opacity: 1;
+           }
+           to {
+               opacity: 0;
+           }
+        }
+    </pre>
+    
+    <div class="blueBoxOut"></div>
+    
+    <p>Built-in to the animation shorthand property is a property called animation-fill-mode. With this, we can control whether the fill-mode is forwards or backwards.</p>
+    
+    <p>A forwards animation-fill-mode means that the element will retain the ending keyframe styles once the animation is finished. A backwards animation-fill mode means the element will start with the starting keyframe styles.</p>
+    
+    <pre>
+        div {
+           height: 150px;
+           width: 150px;
+           background-color: blue;
+           animation: fadeOut 4s forwards;
+        }
+
+        @keyframes fadeOut {
+           from {
+               opacity: 1;
+           }
+           to {
+               opacity: 0;
+           }
+        }
+    </pre>
+    
+    <div class="blueBoxOutFill"></div>
+</body>
+
+</html>

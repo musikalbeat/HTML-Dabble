@@ -1,0 +1,111 @@
+* {
+    color: black;
+}
+
+body {
+    background-color: beige;
+}
+
+h1 {
+	font-size: 45px;
+	text-align: center;
+	color: white;
+	background-color: darkorange;
+	padding: 20px;
+	border: 5px dotted white;
+}
+
+h2 {
+    font-size: 40px;
+	text-align: center;
+	color: white;
+	background-color: orange;
+	padding: 20px;
+	border: 5px dotted white;
+}
+
+p {
+	background-color: rgba(187, 187, 241, 0.794);
+	font-size: 25px;
+    line-height: auto;
+	border: 5px dotted white;
+	border-radius: 20px;
+	text-align: left;
+	padding: 10px 50px;
+	margin: 20px;
+    font-family: 'Josefin Slab', serif;
+    opacity: 1;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+ul, ol {
+    background-color: rgba(187, 187, 241, 0.794);
+    border: 5px dotted white;
+    border-radius: 20px;
+	text-align: left;
+	padding: 10px 50px;
+	margin: 20px;
+    font-family: 'Josefin Slab', serif;
+    opacity: 1;
+    line-height: 30px;
+}
+
+li {
+    font-size: 25px;
+}
+
+/* Lesson Stuff Below */
+
+.blueBoxIn {
+   height: 150px;
+   width: 150px;
+   background-color: blue;
+   animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+   from {
+       opacity: 0;
+   }
+   to {
+       opacity: 1;
+   }
+}
+
+.blueBoxOut {
+   height: 150px;
+   width: 150px;
+   background-color: blue;
+   animation: fadeIn 4s;
+}
+
+@keyframes fadeOut {
+   from {
+       opacity: 1;
+   }
+   to {
+       opacity: 0;
+   }
+}
+
+.blueBoxOutFill {
+   height: 150px;
+   width: 150px;
+   background-color: blue;
+   animation: fadeIn 4s forwards;
+}
+
+@keyframes fadeOut {
+   from {
+       opacity: 1;
+   }
+   to {
+       opacity: 0;
+   }
+}
